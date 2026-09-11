@@ -33,7 +33,6 @@ Install a PyTorch build appropriate to your CUDA environment if GPU training is 
 | `dataset/` | Original Go, JDT, OpenStack and Platform CSV splits |
 | `results/` | Original result-table images, unchanged |
 | `tests/` | Smoke tests using generated synthetic inputs |
-| `IMPLEMENT.md` | Data contracts, mathematical mapping and known discrepancies |
 
 ## Inputs to prepare
 
