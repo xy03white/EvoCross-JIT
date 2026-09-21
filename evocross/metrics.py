@@ -4,6 +4,8 @@ from sklearn.metrics import (
     f1_score,
     roc_auc_score,
     average_precision_score,
+    precision_recall_curve,
+    auc,
     precision_score,
     recall_score,
     confusion_matrix,
@@ -73,11 +75,15 @@ def compute_metrics(
         raise ValueError("Cannot evaluate an empty split")
 
     y_pred = [1 if p >= threshold else 0 for p in y_prob]
+    pr_precision, pr_recall, _ = precision_recall_curve(
+        y_true, y_prob, pos_label=1
+    )
+    pr_auc = float(auc(pr_recall, pr_precision))
 
     metrics = {
         "f1": f1_score(y_true, y_pred, zero_division=0),
         "auc_roc": roc_auc_score(y_true, y_prob) if len(set(y_true)) > 1 else None,
-        "auc_pr": average_precision_score(y_true, y_prob),
+        "auc_pr": pr_auc,
         "precision": precision_score(y_true, y_pred, zero_division=0),
         "recall": recall_score(y_true, y_pred, zero_division=0),
     }
