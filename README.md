@@ -18,7 +18,7 @@ The dataset repositories can be found in the open-source repository of the paper
 
 ## Feature extraction
 
-Run commands from the repository root. Uppercase paths below are placeholders; replace them before execution.
+Run commands from the repository root. Please replace the uppercase paths before execution.
 
 ```bash
 python semantic_feature.py --projects go jdt openstack platform --model_path PATH_TO_CODEBERT --data_dir dataset --output_dir features/semantic --checkpoint_dir models --epochs 10 --train_batch_size 16 --use_contrastive
