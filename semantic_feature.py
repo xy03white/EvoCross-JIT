@@ -1,5 +1,3 @@
-"""Project-specific CodeBERT training and semantic embedding extraction."""
-
 import os
 
 # This pipeline uses PyTorch; do not initialize optional TensorFlow backends.
