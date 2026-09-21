@@ -1,5 +1,3 @@
-"""Extract affected method contexts from enriched CSV files."""
-
 import os
 import re
 import json
