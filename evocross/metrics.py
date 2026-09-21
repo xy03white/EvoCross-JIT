@@ -1,5 +1,3 @@
-"""Validation-only threshold calibration and prediction metrics."""
-
 from typing import List, Dict, Tuple
 import numpy as np
 from sklearn.metrics import (
