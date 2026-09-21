@@ -1,5 +1,3 @@
-"""Two-tower encoders and bidirectional attention with gated fusion."""
-
 from typing import Dict, Tuple, List
 import torch
 from torch import nn
@@ -14,7 +12,6 @@ from .config import (
 
 
 class Time2Vec(nn.Module):
-    """One linear time component and seven learned periodic components."""
 
     def __init__(self, kernel_size: int = TIME_DIM):
         super().__init__()
@@ -161,7 +158,6 @@ class CrossAttention(nn.Module):
 
 
 class CurrentTower(nn.Module):
-    """Project concatenated semantic (768) and structural (1536) vectors."""
 
     def __init__(
         self,
@@ -197,7 +193,6 @@ class CurrentTower(nn.Module):
 
 
 class GMU(nn.Module):
-    """Learn elementwise retention gates for two representations."""
 
     def __init__(self, dim1: int, dim2: int, output_dim: int = None):
         super().__init__()
