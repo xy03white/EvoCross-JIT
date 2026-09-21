@@ -1,5 +1,3 @@
-"""Build a shared Tree-sitter library from local grammar checkouts."""
-
 import argparse
 from pathlib import Path
 from tree_sitter import Language
