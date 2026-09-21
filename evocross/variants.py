@@ -1,5 +1,3 @@
-"""Ablation variants corresponding to Tables 4 and 5."""
-
 from typing import Dict, Tuple, List
 import torch
 from torch import nn
