@@ -11,6 +11,11 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
+## Data preparation
+
+The dataset repositories can be found in the open-source repository of the paper "Deep Just-in-Time Defect Prediction: How Far Are We?" at https://github.com/ZZR0/ISSTA21-JIT-DP, specifically under the path Data_Extraction/git_base/git_datasets/{project}/repo_urls.txt.
+
+
 ## Feature extraction
 
 Run commands from the repository root. Uppercase paths below are placeholders; replace them before execution.
