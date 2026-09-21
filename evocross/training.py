@@ -1,5 +1,3 @@
-"""Shared, chronological training for the full model and paper ablations."""
-
 import argparse
 import json
 import logging
